@@ -7,6 +7,7 @@ public class GenericsDemo {
 	public static void main(String[] args) {
 		
 //		ArrayList myMarks = new ArrayList();
+//		ArrayList<Integer> myMarks = new ArrayList<Integer>();
 		ArrayList<Integer> myMarks = new ArrayList<>();
 		
 		myMarks.add(98);
@@ -15,7 +16,8 @@ public class GenericsDemo {
 //		myMarks.add(false);
 		myMarks.add(97);
 		
-		System.out.println(myMarks);		
+		System.out.println(myMarks);
+		System.out.println(myMarks.get(2));
 		
 	}
 }
