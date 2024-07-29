@@ -33,7 +33,7 @@ public class JdbcDemo {
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(sql);
 			while (rs.next()) {
-				System.out.println(rs.getInt("id") + " " + rs.getString("first_name") + " " + rs.getDouble("salary"));
+				System.out.println(rs.getInt("id") + " " + rs.getString("name") + " " + rs.getDouble("salary"));
 			}
 			rs.close();
 			stmt.close();
