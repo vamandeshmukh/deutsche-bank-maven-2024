@@ -11,13 +11,14 @@ public class CollectionDemo {
 		System.out.println(myList);
 		System.out.println(myList.size());
 		myList.add("Sonu");
-		myList.add("Monu");
-		myList.add("Tonu");
+		myList.add(10);
+		myList.add(false);
 		System.out.println(myList);
 		System.out.println(myList.size());
 		myList.remove(2);
 		System.out.println(myList);
 		System.out.println(myList.size());
+
 		
 		
 		
