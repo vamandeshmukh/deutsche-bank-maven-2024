@@ -16,6 +16,7 @@ public class CallableDemo {
  		System.out.println(future.get());
  		System.out.println(future.get());
  		System.out.println(future.get());
+ 		executor.shutdown();
 	}
 
 }
