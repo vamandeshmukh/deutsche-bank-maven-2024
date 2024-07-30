@@ -1,5 +1,12 @@
 package com.db.demo.inherit;
 
+interface FunInterface {
+	
+	public abstract void funMethod(); 
+
+	
+}
+
 
 interface RegularInterface {
 	
