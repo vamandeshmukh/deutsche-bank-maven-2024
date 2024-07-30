@@ -12,6 +12,8 @@ public class StreamsDemo {
 		list.addAll(Arrays.asList("Sonu", "Monu", "Tonu", "Soni", "Ponu"));
 
 		System.out.println(list);
+		
+		// print names starting with 'S'
 
 	}
 
