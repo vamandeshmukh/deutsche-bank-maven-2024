@@ -12,7 +12,6 @@ package com.db.demo.design.patterns;
 //Builder Pattern: Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
 
 //Structural Patterns
-//
 //Deal with object composition and the relationship between objects.
 //Focus on how classes and objects can be combined to form larger structures.
 //
