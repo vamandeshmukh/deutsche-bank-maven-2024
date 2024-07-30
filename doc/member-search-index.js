@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.db.demo.docs","c":"Maths","l":"addNums(int, int)","u":"addNums(int,int)"},{"p":"com.db.demo.docs","c":"Maths","l":"Maths()","u":"%3Cinit%3E()"},{"p":"com.db.demo.docs","c":"Maths","l":"subNums(int, int)","u":"subNums(int,int)"}];updateSearchResults();
