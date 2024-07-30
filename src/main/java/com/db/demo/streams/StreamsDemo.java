@@ -13,8 +13,8 @@ public class StreamsDemo {
 		list.addAll(Arrays.asList("Sonu", "Monu", "Tonu", "Soni", "Ponu"));
 
 		System.out.println(list);
-		
-		// print names starting with 'S'
+
+		System.out.println("print names starting with 'S'");
 
 		System.out.println("Using for loop:");
 		for (int i = 0; i < list.size(); i++) {
@@ -24,7 +24,7 @@ public class StreamsDemo {
 		}
 
 		System.out.println("Using for each loop:");
-		for (String name: list) {
+		for (String name : list) {
 			if (name.startsWith("S")) {
 				System.out.println(name);
 			}
@@ -36,31 +36,22 @@ public class StreamsDemo {
 				System.out.println(name);
 			}
 		});
-		
+
 //		filter, map, reduce, skip, limit etc 
-		
+
 //		Stream<T>
 		System.out.println("Using Stream API:");
 
 		list.stream().filter(name -> name.startsWith("S")).toList().forEach(name -> System.out.println(name));
 
+		System.out.println("Print only the first three names");
+		list.stream().limit(3).toList().forEach(name -> System.out.println(name));
+
+		System.out.println("Skip the first two names and print the remaining");
+		list.stream().skip(2).toList().forEach(name -> System.out.println(name));
+
+		System.out.println("Skip the first two names and print the next two names");
+		list.stream().skip(2).limit(2).toList().forEach(name -> System.out.println(name));
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
