@@ -11,7 +11,7 @@ public class CallableDemo {
 		
 		Print print = new Print();
 		
-		ExecutorService executor = Executors.newFixedThreadPool(3);
+		ExecutorService executor = Executors.newFixedThreadPool(2);
  		Future<Integer> future = executor.submit(print);
  		System.out.println(future.get());
  		System.out.println(future.get());
