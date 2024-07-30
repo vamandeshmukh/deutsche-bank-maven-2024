@@ -52,12 +52,15 @@ public class InheritDemo {
 	public static void main(String[] args) {
 		
 //		FunInterface funInt = () -> {}:
-		FunInterface funInt = () -> {System.out.println("Fun method implemented");};
-		funInt.funMethod();
+//		FunInterface funInt = () -> {System.out.println("Fun method implemented");};
+//		funInt.funMethod();	
 		
-		
+//		Calc calc = (Integer i, Integer j) -> { return i + j;};
+//		Calc calc = (i, j) -> { return i + j;};
+		Calc calc = (i, j) ->  i + j ;
+//		Calc calc = i ->  i + j ;
+		System.out.println(calc.addNums(10, 20));
 	}
-
 }
 
 

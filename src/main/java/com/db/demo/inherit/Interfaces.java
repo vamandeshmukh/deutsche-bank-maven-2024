@@ -1,10 +1,15 @@
 package com.db.demo.inherit;
 
+
+
 interface FunInterface {
 	
 	public abstract void funMethod(); 
-
 	
+}
+
+interface Calc {
+	public abstract Integer addNums(Integer i, Integer j);
 }
 
 
