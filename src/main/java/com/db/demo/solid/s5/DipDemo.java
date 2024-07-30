@@ -1,26 +1,39 @@
 package com.db.demo.solid.s5;
 
 //Dependency Inversion Principle (DIP)
-//High-level modules should not depend on low-level modules. Both should depend on abstractions.
+// High-level modules should not depend on low-level modules. Both should depend on abstractions.
 //Use abstractions (interfaces or abstract classes) to decouple components.
 //Promotes loose coupling and testability.
 
 public class DipDemo {
-
+	
 	public static void main(String[] args) {
-
-		Printable printer1 = new LaserPrinter();
-		Printable printer2 = new InkjetPrinter();
-
-		Computer obj = new Computer(printer1);
-		String document = "Text in the document...";
-		obj.printDocument(document);
-
+		
+		Printable printer = new InkjetPrinter();
+//		printer = new LaserPrinter();
+		
+		Computer computer = new Computer(printer);
+		computer.printDocument("abcd");		
+		
 	}
-
 }
 
-//class Printer {
+//public class DipDemo {
+//
+//	public static void main(String[] args) {
+//
+//		Printable printer1 = new LaserPrinter();
+//		Printable printer2 = new InkjetPrinter();
+//
+//		Computer obj = new Computer(printer1);
+//		String document = "Text in the document...";
+//		obj.printDocument(document);
+//
+//	}
+//
+//}
+
+//class Printer { // INKJET PRINTER 
 //    public void print(String document) {
 //
 //    }
