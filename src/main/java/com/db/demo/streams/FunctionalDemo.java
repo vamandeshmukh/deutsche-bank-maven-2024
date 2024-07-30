@@ -1,5 +1,6 @@
 package com.db.demo.streams;
 
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class FunctionalDemo {
@@ -19,7 +20,11 @@ public class FunctionalDemo {
 //		};
 		
 		Predicate<Integer> predicate = num ->  (num % 2 == 0);
-
 		System.out.println(predicate.test(21));
+		
+		System.out.println("Find square of num");
+		Function<Integer, Integer> function = num -> num * num;
+	 	System.out.println(function.apply(10));
+
 	}
 }
