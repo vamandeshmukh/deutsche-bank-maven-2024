@@ -24,6 +24,9 @@ public class FunctionalDemo {
 		Predicate<Integer> predicate = num ->  (num % 2 == 0);
 		System.out.println(predicate.test(21));
 		
+//		Predicate<Integer> predicate2 = (num1, num2)->  (num % 2 == 0);
+//		System.out.println(predicate2.test(21));
+
 		System.out.println("Find square of num");
 		Function<Integer, Integer> function = num -> num * num;
 	 	System.out.println(function.apply(10));
@@ -36,10 +39,11 @@ public class FunctionalDemo {
 	 	Supplier<Integer> supplier = () -> 10;
 	 	System.out.println(supplier.get());
 	 	
-	 	
-
 	}
 }
+
+
+
 
 
 
