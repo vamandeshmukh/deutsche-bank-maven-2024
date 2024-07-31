@@ -50,7 +50,7 @@ public class CalcTests {
 		assertEquals(expected, calc.addNums(num, num));
 	}
 
-	@Disabled
+//	@Disabled
 	@Test
 	public void testAddNums2() {
 		assertNotEquals(11, calc.addNums(5, 5));
