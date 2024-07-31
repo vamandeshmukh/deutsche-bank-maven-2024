@@ -4,8 +4,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 public class CalcTests {
 	
@@ -22,12 +27,31 @@ public class CalcTests {
 		// code runs once after all the test cases 
 		calc = null;
 	}
+	
+	@BeforeEach
+	void m1() {
+		
+	}
+	
+	@AfterEach
+	void m2() {
+		
+	}
 
 	@Test
 	public void testAddNums() {
 		assertEquals(10, calc.addNums(5, 5));		
 	}
 
+	@ParameterizedTest
+	@ValueSource(ints = {10, 20, 20, 40, 50})
+	public void testAddNums3(int num) {
+		int expected = num + num; 
+		assertEquals(expected, calc.addNums(num, num));		
+	}
+
+	
+	@Disabled
 	@Test
 	public void testAddNums2() {
 		assertNotEquals(11, calc.addNums(5, 5));		
