@@ -11,8 +11,29 @@ public class CalcTests {
 		Calc calc = new Calc();
 		Integer expected = 10;
 		Integer actual = calc.addNums(5, 5);
-		assertEquals(expected, actual);
-		
+		assertEquals(expected, actual);		
 	}
 
+	@Test
+	public void testAddNums2() {
+		Calc calc = new Calc();
+		Integer expected = 11;
+		Integer actual = calc.addNums(6, 5);
+		assertEquals(expected, actual);		
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
