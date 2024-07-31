@@ -13,13 +13,13 @@ public class CalcTests {
 
 	@BeforeAll
 	static void setUp() {
-		// code runs once before all test cases 
+		// code runs once before all the test cases 
 		calc = new Calc();
 	}
 
 	@AfterAll
 	static void tearDown() {
-		// code runs once after all test cases 
+		// code runs once after all the test cases 
 		calc = null;
 	}
 
